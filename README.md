@@ -1,1 +1,2 @@
-# notes
+# My notes
++ [Git](/GIT.md)
