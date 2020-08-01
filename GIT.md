@@ -10,3 +10,9 @@
 + Удаление коммита с гита :
 git reset --hard HEAD^
 git push --force
++ объединение двух репозиториев project-a с project-b:
+cd path/to/project-b
+git remote add project-a path/to/project-a
+git fetch project-a --tags
+git merge --allow-unrelated-histories project-a/master # or whichever branch you want to merge
+git remote remove project-a
