@@ -13,12 +13,12 @@
 + Create a new local repository -- `git init [project name]`;
 + Download from an existing repository -- `git clone [link]`;
 
-<a name="observeRepository"><h2>Create a Repository</h2></a>
+<a name="observeRepository"><h2>Observe your Repository</h2></a>
 + List new or modified files not yet committed -- `git status`;
 + Show the changes to files not yet staged -- `git diff`;
 + Show full change history -- `git log`;
 
-<a name="workingBranches"><h2>Create a Repository</h2></a>
+<a name="workingBranches"><h2>Working with Branches</h2></a>
 + List all local branches -- `git branch`;
 + Switch to a branch, my_branch, and update working directory -- `gsait checkout my_branch`;
 + Create a new branch called new_branch -- `git branch -d my_branch`;
@@ -29,7 +29,7 @@ git checkout branch_b
 git merge branch_a
 ```
 
-<a name="makeChange"><h2>Create a Repository</h2></a>
+<a name="makeChange"><h2>Make a change</h2></a>
 
 + Stages the file, ready for commit -- `git add [file]`;
 + Stage all changed files, ready for commit -- `git add`;
@@ -39,7 +39,7 @@ git merge branch_a
 + Revert everything to the last commit -- `git reset --hard`;
 
 
-<a name="synchronize"><h2>Create a Repository</h2></a>
+<a name="synchronize"><h2>Synchronize</h2></a>
 
 + Get the latest changes from origin (no merge) -- `git fetch`;
 + Fetch the latest changes from origin and merge -- `git pull`;
