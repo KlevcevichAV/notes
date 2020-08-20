@@ -1,19 +1,21 @@
 # Git
-+ `git clone link` -- клонирует удаленный репозиторий;
-+ `git status` -- показывает состояния файлов в рабочей директории и индексе: какие файлы изменены, но не добавлены в индекс; какие ожидают коммита в индексе.
-+ `git add` -- добавляет содержимое рабочей директории в индекс (staging area) для последующего коммита
+
++ Download from an existing repository -- `git clone [link]`;
++ Create a new local repository -- `git init [project name]`;
++ List new or modified files not yet committed -- `git status`;
++ Stages the file, ready for commit -- `git add [file]`;
 + `git commit` -- берёт все данные, добавленные в индекс и сохраняет их слепок во внутренней базе данных, а затем сдвигает указатель текущей ветки на этот слепок.
-+ `git reset` -- используется в основном для отмены изменений
-+ `git push` -- используется для установления связи с удалённым репозиторием, вычисления локальных изменений отсутствующих в нём, и собственно их передачи в вышеупомянутый репозиторий.
-+ `git pull` -- работает как комбинация команд git fetch и git merge, т.е. Git вначале забирает изменения из указанного удалённого репозитория, а затем пытается слить их с текущей веткой.
-+ `git rm -r --cached out/` - удаление out из индекса
-+ Удаление коммита с гита :
++ Unstages file, keeping the file changes -- `git reset [file]`;
++ Push local changes to the origin -- `git push`;
++ Fetch the latest changes from origin and merge -- `git pull`;
++ You stage a file for removal, but you don't remove it from the working dir. The file will then be shown as untracked. -- `git rm [file]`;
++ Removing a commit from a git :
 
 ```
 git reset --hard HEAD^
 git push --force
 ```
-+ объединение двух репозиториев project-a с project-b:
++ Merging two project-a repositories with project-b:
 
 ```
 cd path/to/project-b
