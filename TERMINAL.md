@@ -1,68 +1,64 @@
 # Terminal
-#### КОМАНДЫ ДЛЯ УПРАВЛЕНИЯ ФАЙЛАМИ
+#### FILE MANAGEMENT COMMANDS
 
-+ `ls` — список файлов и папок.
++ List information about the FILEs --`ls`
 
-	`-l` отобразит подробные данные о каждом элементе, включая права доступа, размер файлов и т.д.
+	`-l` -- use a long listing format
 
-	`-a `отобразит список всех файлов и каталогов в текущей папке, включая скрытые элементы
+	`-a ` -- do not ignore entries starting with .
 
-+ `cd` — перемещение между каталогами 
++ Change the shell working directory -- `cd`
 
-	Для выхода в папку на уровень выше используется команда cd ..
++ Print the name of the current working directory -- `pwd`
 
-	А выполнив команду `cd` вы моментально перенесетесь в домашний каталог пользователя
++ Create the DIRECTORY(ies), if they do not already exist. -- `mkdir`
 
-+ `pwd` — полный путь к рабочему каталогу 
-
-+ `mkdir` — создание каталога 
-
-+ `rm`, `rmdir` — удаление файлов и каталогов
++ Remove (unlink) the FILE(s) -- `rm`
 	
-	`-r` Test2 рекурсивно удаляет все находящиеся файлы и папки внутри Test2, а его удаляет в самом конце.
+	`-r` remove directories and their contents recursively
 
-+ `mv` и `cp` — перемещение и копирование фалов 
-	
-	Первым параметром (~/test1.txt) выступает файл, который нам нужно переместить, а вторым — каталог назначения и результирующее имя файла.
++ Move (rename) files -- `mv`
 
-+ `open` — запуск приложения
++ Copy files and directories -- `cp`
 
-+ `cat` — позволит вам вывести в окно Терминала содержимое файла
++ Start a program -- `open`
 
-+ `top` — просмотр списока запущенных процессов
-+ `man` — вывод деятельной справки по какой-либо команде(через пробел имя команды)
++ Concatenate files and print on the standard output -- `cat`
 
-+ `find` — поиск в файловой системе, файлах и папках.
++ Display Linux processes -- `top`
++ An interface to the on-line reference manuals -- `man`
 
-+ `chmod` - позволяет назначать права доступа к файлам или каталогам.
-  + `chmod 777 file` -- разрешение чтения, записи, выполнения файла file всеми пользователями и группами (полный доступ)
-  + `chmod -R 777 *` -- для рекурсии(включая все подкаталоги)
++ Search for files in a directory hierarchy --`find`
 
-#### КОМАНДЫ КОНСОЛИ ДЛЯ РАБОТЫ С ТЕКСТОМ
++ Change file mode bits -- `chmod`
+  + `chmod -R 777` -- change files and directories recursively
 
-+ `less` — просмотр длинных текстов, которые не вмещаются на одном экране
+#### CONSOLE COMMANDS FOR WORKING WITH TEXT
 
-+ `head` / `tail`
++ Viewing long texts that do not fit on one screen -- `less`
+
++ Output the first part of files -- `head`
++ Output the last part of files-- `tail`
 
 	Head выводит несколько первых строк из файла (голова), а tail выдает несколько последних строк (хвост).
 
-+ `|grep` — ищет текст по шаблону
++ Searches text by pattern -- `|grep`
 
-+ `sort` — сортировка строк текста по различным критериям
++ Sort lines of text files -- `sort`
 
-	`-n`(numeric)
+	`-n`(numeric) -- compare according to string numerical value
 
-	`-r`(reverse)
-+ `wc` — подсчёт количества слов, строк, байт и символов.
+	`-r`(reverse) -- reverse the result of comparisons
++ Print newline, word, and byte counts for each file -- `wc`
 
-+ `diff` — показывает различия между двумя файлами в построчном сравнении(Измененные строки отмечаются символом "с", удалнные - "d", а новые - "а").
++ Compare files line by line -- `diff`
 
-#### Комбинации клавиш
+#### Keyboard shortcuts
 
-- `ctrl + c` — остановка
-- `ctrl + z` — замарозка 
-- `ctrl + d` - закрыть терминал
-- `fg` — размарозка
-- `ctrl + shift + c` — копировать
-- `ctrl + shift + v` — вставить
+- `ctrl + c` — stop
+- `ctrl + z` — freeze 
+- `ctrl + d` - close the terminal
+- `fg` — defrost
+- `ctrl + shift + c` — copy
+- `ctrl + shift + v` — insert
 
