@@ -7,7 +7,7 @@
 + [MANAGING TABLES](#ManagingTables)
 + [USING SQL CONSTRAINTS](#usingSQLConstraints)
 + [MODIFYING DATA](#modifyingData)
-
++ [SQL AGGREGATE FUNCTIONS](#SQLAggregateFunctions)
 <a name="queryingDataFromATable"><h2>QUERYING DATA FROM A TABLE</h2></a>
 
 + Query data in columns c1, c2 from a table -- `SELECT c1, c2 FROM t;`
@@ -239,3 +239,11 @@ WHERE condition;
 DELETE FROM t
 WHERE condition;
 ```
+
+<a name="SQLAggregateFunctions"><h2>SQL AGGREGATE FUNCTIONS</h2></a>
++ `AVG` returns the average of a list
++ `COUNT` returns the number of elements of a list
++ `SUM` returns the total of a list
++ `MAX` returns the maximum value in a list
++ `MIN` returns the minimum value in a list
+
