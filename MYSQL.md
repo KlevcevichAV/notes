@@ -7,7 +7,10 @@
 + [MANAGING TABLES](#ManagingTables)
 + [USING SQL CONSTRAINTS](#usingSQLConstraints)
 + [MODIFYING DATA](#modifyingData)
++ [MANAGING VIEWS](#managingViews)
++ [MANAGING INDEXES](#managingIndexes)
 + [SQL AGGREGATE FUNCTIONS](#SQLAggregateFunctions)
+
 <a name="queryingDataFromATable"><h2>QUERYING DATA FROM A TABLE</h2></a>
 
 + Query data in columns c1, c2 from a table -- `SELECT c1, c2 FROM t;`
@@ -239,6 +242,60 @@ WHERE condition;
 DELETE FROM t
 WHERE condition;
 ```
+<a name="managingViews"><h2>MANAGING VIEWS</h2></a>
++ Create a new view that consists of c1 and c2
+```
+CREATE VIEW v(c1,c2)
+AS
+SELECT c1, c2
+FROM t;
+```
+
++ Create a new view with check option
+```
+CREATE VIEW v(c1,c2)
+AS
+SELECT c1, c2
+FROM t;
+WITH [CASCADED | LOCAL] CHECK OPTION;
+```
+
++ Create a recursive view
+```
+CREATE RECURSIVE VIEW v
+AS
+select-statement -- anchor part
+UNION [ALL]
+select-statement; -- recursive part
+```
+
++ Create a temporary view
+```
+CREATE TEMPORARY VIEW v
+AS
+SELECT c1, c2
+FROM t;
+```
+
++ Delete a view -- `DROP VIEW view_name`
+
+<a name="managingIndexes"><h2>MANAGING INDEXES</h2></a>
+
++ Create an index on c1 and c2 of the table t
+```
+CREATE INDEX idx_name
+ON t(c1,c2);
+```
+
++ Create a unique index on c3, c4 of the table t
+```
+CREATE UNIQUE INDEX idx_name
+ON t(c3,c4);
+```
+
++ Drop an index -- `DROP INDEX idx_name;`
+
+
 
 <a name="SQLAggregateFunctions"><h2>SQL AGGREGATE FUNCTIONS</h2></a>
 + `AVG` -- returns the average of a list
@@ -246,4 +303,3 @@ WHERE condition;
 + `SUM` -- returns the total of a list
 + `MAX` -- returns the maximum value in a list
 + `MIN` -- returns the minimum value in a list
-
