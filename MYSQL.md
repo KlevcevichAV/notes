@@ -169,14 +169,14 @@ price INT DEFAULT 0
 
 <a name="usingSQLConstraints"><h2>USING SQL CONSTRAINTS</h2></a>
 
-+ Set c1 and c2 as a primary key
++ Set c1 and c2 as a primary key:
 ```
 CREATE TABLE t(
 c1 INT, c2 INT, c3 VARCHAR,
 PRIMARY KEY (c1,c2)
 );
 ```
-+ Set c2 column as a foreign key
++ Set c2 column as a foreign key:
 ```
 CREATE TABLE t1(
 c1 INT PRIMARY KEY,
@@ -184,21 +184,21 @@ c2 INT,
 FOREIGN KEY (c2) REFERENCES t2(c2)
 );
 ```
-+ Make the values in c1 and c2 unique
++ Make the values in c1 and c2 unique:
 ```
 CREATE TABLE t(
 c1 INT, c1 INT,
 UNIQUE(c2,c3)
 );
 ```
-+ Ensure c1 > 0 and values in c1 >= c2
++ Ensure c1 > 0 and values in c1 >= c2:
 ```
 CREATE TABLE t(
 c1 INT, c2 INT,
 CHECK(c1> 0 AND c1 >= c2)
 );
 ```
-+ Set values in c2 column not NULL
++ Set values in c2 column not NULL:
 ```
 CREATE TABLE t(
 c1 INT PRIMARY KEY,
@@ -207,29 +207,29 @@ c2 VARCHAR NOT NULL
 ```
 <a name="modifyingData"><h2>MODIFYING DATA</h2></a>
 
-+ Insert one row into a table
++ Insert one row into a table:
 ```
 INSERT INTO t(column_list)
 VALUES(value_list);
 ```
-+ Insert multiple rows into a table
++ Insert multiple rows into a table:
 ```
 INSERT INTO t(column_list)
 VALUES (value_list),
 (value_list), ….;
 ```
-+ Insert rows from t2 into t1
++ Insert rows from t2 into t1:
 ```
 INSERT INTO t1(column_list)
 SELECT column_list
 FROM t2;
 ```
-+ Update new value in the column c1 for all rows
++ Update new value in the column c1 for all rows:
 ```
 UPDATE t
 SET c1 = new_value;
 ```
-+ Update values in the column c1, c2 that match the condition
++ Update values in the column c1, c2 that match the condition:
 ```
 UPDATE t
 SET c1 = new_value,
@@ -237,13 +237,13 @@ c2 = new_value
 WHERE condition;
 ```
 + Delete all data in a table -- `DELETE FROM t;`;
-+ Delete subset of rows in a table
++ Delete subset of rows in a table:
 ```
 DELETE FROM t
 WHERE condition;
 ```
 <a name="managingViews"><h2>MANAGING VIEWS</h2></a>
-+ Create a new view that consists of c1 and c2
++ Create a new view that consists of c1 and c2:
 ```
 CREATE VIEW v(c1,c2)
 AS
@@ -251,7 +251,7 @@ SELECT c1, c2
 FROM t;
 ```
 
-+ Create a new view with check option
++ Create a new view with check option:
 ```
 CREATE VIEW v(c1,c2)
 AS
@@ -260,7 +260,7 @@ FROM t;
 WITH [CASCADED | LOCAL] CHECK OPTION;
 ```
 
-+ Create a recursive view
++ Create a recursive view:
 ```
 CREATE RECURSIVE VIEW v
 AS
@@ -269,7 +269,7 @@ UNION [ALL]
 select-statement; -- recursive part
 ```
 
-+ Create a temporary view
++ Create a temporary view:
 ```
 CREATE TEMPORARY VIEW v
 AS
@@ -281,13 +281,13 @@ FROM t;
 
 <a name="managingIndexes"><h2>MANAGING INDEXES</h2></a>
 
-+ Create an index on c1 and c2 of the table t
++ Create an index on c1 and c2 of the table t:
 ```
 CREATE INDEX idx_name
 ON t(c1,c2);
 ```
 
-+ Create a unique index on c3, c4 of the table t
++ Create a unique index on c3, c4 of the table t:
 ```
 CREATE UNIQUE INDEX idx_name
 ON t(c3,c4);
