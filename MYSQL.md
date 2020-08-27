@@ -166,7 +166,7 @@ price INT DEFAULT 0
 
 <a name="usingSQLConstraints"><h2>USING SQL CONSTRAINTS</h2></a>
 
-+ 
++ Set c1 and c2 as a primary key
 ```
 CREATE TABLE t(
 c1 INT, c2 INT, c3 VARCHAR,
@@ -241,9 +241,9 @@ WHERE condition;
 ```
 
 <a name="SQLAggregateFunctions"><h2>SQL AGGREGATE FUNCTIONS</h2></a>
-+ `AVG` returns the average of a list
-+ `COUNT` returns the number of elements of a list
-+ `SUM` returns the total of a list
-+ `MAX` returns the maximum value in a list
-+ `MIN` returns the minimum value in a list
++ `AVG` -- returns the average of a list
++ `COUNT` -- returns the number of elements of a list
++ `SUM` -- returns the total of a list
++ `MAX` -- returns the maximum value in a list
++ `MIN` -- returns the minimum value in a list
 
