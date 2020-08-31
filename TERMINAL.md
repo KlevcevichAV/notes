@@ -32,10 +32,13 @@
 
 + Change file mode bits -- `chmod`
   + `chmod -R 777` -- change files and directories recursively
+  + `chmod +x file` -- makes the file executable
 
 #### CONSOLE COMMANDS FOR WORKING WITH TEXT
 
 + Viewing long texts that do not fit on one screen -- `less`
+
++ File editing -- `nano file`
 
 + Output the first part of files -- `head`
 + Output the last part of files-- `tail`
@@ -61,4 +64,12 @@
 - `fg` — defrost
 - `ctrl + shift + c` — copy
 - `ctrl + shift + v` — insert
+
+#### File upload
++ Text program for downloading files -- `wget link`
+  + `-P prefix` -- Set directory prefix to prefix.
+  + `-i file` -- Read URLs from a local or external file. 
+  + `-r` -- enable recursive browsing of directories and subdirectories on the remote server.
+  + `-l` -- Determine the maximum recursion depth equal to depth when browsing directories on a remote server. By default depth = 5.
+  + -A <acclist>, –accept <acclist>, -R <rejlist>, –reject <rejlist> -- a comma-separated list of filenames to (accept) or not (reject) upload. Allowed to set file names by mask.
 
