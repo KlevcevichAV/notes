@@ -2,6 +2,7 @@
 #### Content
 + [INPUT](#input)
 + [OUTPUT](#output)
++ [JAVAFX](#javaFX)
 
 
 
@@ -67,3 +68,7 @@ System.out.printf("x=%d; y=%d \n", x, y);
     + FileWriter(FileDescriptor fd)
     + FileWriter(String fileName)
     + FileWriter(String fileName, boolean append) 
+
+
+<a name="javaFX"><h2>JAVAFX</h2></a>
+--module-path /home/sanchir/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml
