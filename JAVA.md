@@ -1,12 +1,15 @@
 # Java
 #### Content
-+ [INPUT](#input)
-+ [OUTPUT](#output)
-+ [JAVAFX](#javaFX)
++ [Input](#input)
++ [Output](#output)
++ [Cycles](#cycles)
+
++ [JavaFX](#javaFX)
 
 
 
-<a name="input"><h2>INPUT</h2></a>
+
+<a name="input"><h2>Input</h2></a>
 + from keyboard:
 ```
 	Scanner in = new Scanner(System.in);
@@ -41,7 +44,7 @@ try(FileReader reader = new FileReader("notes3.txt"))
     + FileReader(File file)
     + FileReader(FileDescriptor fd)
 
-<a name="output"><h2>OUTPUT</h2></a>
+<a name="output"><h2>Output</h2></a>
 + in the console:
 ```
 System.out.println("text");
@@ -69,6 +72,24 @@ System.out.printf("x=%d; y=%d \n", x, y);
     + FileWriter(String fileName)
     + FileWriter(String fileName, boolean append) 
 
+<a name="cycles"><h2>Cycles</h2></a>
++ for
+`for(int i = 0; i < n; i++){...}`
+We don't need to specify all conditions when declaring a loop.
 
+  + foreach
+`for (int x : nums) {...}`
+
++ while
+
+`while (condition) {...}`
+
++ do ... while
+`do {...} while(condition);`
 <a name="javaFX"><h2>JAVAFX</h2></a>
 --module-path /home/sanchir/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml
+
++ Operators
+  + `break` -- The break statement allows you to exit the loop at any moment.
+
+  + `continue` -- The continue statement allows you to go to the next iteration.

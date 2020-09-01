@@ -73,3 +73,17 @@
   + `-l` -- Determine the maximum recursion depth equal to depth when browsing directories on a remote server. By default depth = 5.
   + -A <acclist>, –accept <acclist>, -R <rejlist>, –reject <rejlist> -- a comma-separated list of filenames to (accept) or not (reject) upload. Allowed to set file names by mask.
 
+#### Archives
++ `unzip archive.zip`
++ `gunzip archive.gz`
++ `zip files`
++ `gzip file`
++ 
+```
+tar -cvf archive.tar files
+gzip archive.tar
+```
++ `tor -zcxf archive.tar.gz files`
+
++ `tar -xvf archive.tar`
++ `tar -xzvf archive.tar.gz`
