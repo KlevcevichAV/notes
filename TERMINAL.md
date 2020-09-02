@@ -74,16 +74,16 @@
   + -A <acclist>, –accept <acclist>, -R <rejlist>, –reject <rejlist> -- a comma-separated list of filenames to (accept) or not (reject) upload. Allowed to set file names by mask.
 
 #### Archives
-+ `unzip archive.zip`
-+ `gunzip archive.gz`
-+ `zip files`
-+ `gzip file`
-+ 
++ Unzip archive.zip -- `unzip archive.zip`
++ Unzip archive.gz-- `gunzip archive.gz`
++ Zip files in zip format -- `zip files`
++ Zip file in gz format -- `gzip file`
++ Zip files in gz format
 ```
 tar -cvf archive.tar files
 gzip archive.tar
 ```
-+ `tor -zcxf archive.tar.gz files`
++ Pack the listed files into archive.tar.gz -- `tor -zcxf archive.tar.gz files`
 
-+ `tar -xvf archive.tar`
-+ `tar -xzvf archive.tar.gz`
++ Unzip archive.tar -- `tar -xvf archive.tar`
++ Unzip archive.tar.gz -- `tar -xzvf archive.tar.gz`
