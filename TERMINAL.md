@@ -87,3 +87,12 @@ gzip archive.tar
 
 + Unzip archive.tar -- `tar -xvf archive.tar`
 + Unzip archive.tar.gz -- `tar -xzvf archive.tar.gz`
+
+#### Search
++ Search for files in a directory hierarchy -- `find <dir>`
+  + `find <dir> -name "*.txt"` -- find all txt files
+  + `find -name "image?.png"` -- find files starting with image(? - 1 character)
++ Find line in file -- `grep "string" file`
+  + `grep -c "string" file` -- number of occurrences
+  + `grep -r "string"` -- Find in folder
+  + `grep -r -h "string"` -- Find in folder and hide the way
